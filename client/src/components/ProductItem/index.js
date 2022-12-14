@@ -8,6 +8,8 @@ import { useSelector } from 'react-redux'
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
 
+  // const [state, dispatch] = useSelector(item);
+  const { cart } = state
   const {
     image,
     name,
@@ -16,7 +18,7 @@ function ProductItem(item) {
     quantity
   } = item;
 
-  const { cart } = state
+
   const itemInCart = useSelector(state =>
     cart.find(cartItem => cartItem._id ===  _id)
   )

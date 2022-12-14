@@ -9,8 +9,9 @@ import spinner from '../../assets/spinner.gif';
 import { useSelector } from 'react-redux'
 function ProductList() {
   const [state, dispatch] = useStoreContext();
-
+  // const [state, dispatch] = useSelector(ProductItem);
   const { currentCategory } = state;
+
 
   const { loading, data } = useQuery(QUERY_PRODUCTS);
 
