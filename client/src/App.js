@@ -14,7 +14,6 @@ import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
-import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 import { Provider } from 'react-redux';
@@ -45,7 +44,6 @@ function App() {
     <Provider store={store}>
       <Router>
         <div>
-          <StoreProvider>
             <Nav />
             <Routes>
               <Route 
@@ -77,7 +75,6 @@ function App() {
                 element={<NoMatch />} 
               />
             </Routes>
-          </StoreProvider>
         </div>
       </Router>
     </Provider>

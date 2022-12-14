@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
-
+import store from './utils/GlobalState';
 
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-import useProductReducer from './utils/reducers';
 
 
 ReactDOM.render(
