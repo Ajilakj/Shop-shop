@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {
   ApolloClient,
@@ -18,9 +19,12 @@ import { StoreProvider } from './utils/GlobalState';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 
+
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
+
+// const store = Redux.createStore(useProductReducer)
 
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem('id_token');
