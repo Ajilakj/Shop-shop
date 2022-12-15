@@ -45,12 +45,12 @@ function App() {
       <Router>
         <div>
             <Nav />
-            <Routes>
-              <Route 
+          <Routes> 
+               <Route 
                 path="/" 
                 element={<Home />} 
               />
-              <Route 
+               <Route 
                 path="/login" 
                 element={<Login />} 
               />
@@ -61,7 +61,7 @@ function App() {
               <Route 
                 path="/success" 
                 element={<Success />} 
-              />
+              /> 
               <Route 
                 path="/orderHistory" 
                 element={<OrderHistory />} 
@@ -73,7 +73,7 @@ function App() {
               <Route 
                 path="*" 
                 element={<NoMatch />} 
-              />
+              /> 
             </Routes>
         </div>
       </Router>
