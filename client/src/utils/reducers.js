@@ -92,7 +92,7 @@ export function reducer (state=initialstate, action)  {
   }
 };
 
-export function useProductReducer(initialState) {
-  return useReducer(reducer, initialState);
-}
+// export function useProductReducer(initialState) {
+//   return useReducer(reducer, initialState);
+// }
 export default reducer;
